@@ -19,6 +19,14 @@ border-radius:5px;
 }
 #demo , #demo1 { color:red;font-size:1.2em;}
 
+.trunc {
+white-space: nowrap;
+overflow: hidden;
+text-overflow: ellipsis;
+width:45em;
+}
+
+
 #left {
 width:40%;
 max-width:40%;
@@ -32,6 +40,10 @@ width:60%;
 max-width:58%;
 float:left;
 margin:6px;
+}
+section#common {
+padding:5px;
+margin:7px;
 }
 
 #i1 ,#i2 {

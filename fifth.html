@@ -1,0 +1,61 @@
+<html>
+<head>
+<title> Second Page</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+<script src="https://cdn.firebase.com/js/client/2.4.0/firebase.js"></script>
+<link rel="stylesheet" href="index.css"/>
+<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Josefin Slab">
+<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+<script type="text/javascript" src="validate.js"></script>
+</head>
+
+<body>
+<script>
+
+var myFirebaseRef = new Firebase("https://demotrial.firebaseio.com/");
+
+myFirebaseRef.child("fourth").on("value", function(snapshot) {
+
+  document.getElementById('link4').innerHTML=snapshot.val();
+});
+
+
+</script>
+  
+<header>
+  	<h1> SEARS HOLDINGS </h1>
+	<h1> INDIA </h1>
+</header>
+
+<section id="common">
+      <div id="link4"></div>
+</section>
+ 
+
+
+<footer>
+	<section id="left_footer">
+	<h3> SEARS IT and Management Services India</h3>
+	<p>EON Free Zone, Cluster C,Wing 2, 7th Floor,<br>
+	MIDC Kharadi Knowledge Park,Pune 411 014.<br>
+	<i class="fa fa-phone"></i>&nbsp;&nbsp; 020-67308500 
+    <i class="fa fa-fax"></i>&nbsp;&nbsp; 020 67308700<br>
+	 <i class="fa fa-envelope"></i>&nbsp;&nbsp; shi.communications@searshc.com
+	</section>   
+
+	<section id="right_footer">
+		<h3> Contact Information</h3>
+		<form name="f1" onsubmit="return validate();" method="post">
+		<label>Email: </label><input type="email" name="email" size="40" required/><br><br>
+		<label>Name: </label><input type="text" name="name" size="40" required/><br><br>
+		<label>Message: </label><textarea type="text1" name="text_box" rows="5" cols="40" required/></textarea><br><br>	
+		<button type="submit" style="padding:10px;">Submit</button>
+		<span id="demo"> </span>
+		<span id="demo1"> </span>
+		</form>
+		
+	</section>
+</footer>
+</body>
+</html>

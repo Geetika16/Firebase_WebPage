@@ -15,23 +15,23 @@
 
 var myFirebaseRef = new Firebase("https://demotrial.firebaseio.com/");
 
-myFirebaseRef.child("tech").on("value", function(snapshot) {
-  var snap=snapshot.val();  // Alerts "San Francisco"
-  document.getElementById('link1').innerHTML=snap;
+myFirebaseRef.child("first").on("value", function(snapshot) {
+  
+   document.getElementById('link1').innerHTML=snapshot.val(); 
 });
 
-myFirebaseRef.child("visit").on("value", function(snapshot) {
-  var snap1=snapshot.val();  // Alerts "San Francisco"
-  document.getElementById('link2').innerHTML=snap1;
+myFirebaseRef.child("second").on("value", function(snapshot) {
+ 
+  document.getElementById('link2').innerHTML=snapshot.val();
 });
 
-myFirebaseRef.child("industry").on("value", function(snapshot) {
-  var snap2=snapshot.val();  // Alerts "San Francisco"
-  document.getElementById('link3').innerHTML=snap2;
+myFirebaseRef.child("third").on("value", function(snapshot) {
+  
+  document.getElementById('link3').innerHTML=snapshot.val();
 });
-myFirebaseRef.child("interaction").on("value", function(snapshot) {
-  var snap3= snapshot.val();  // Alerts "San Francisco"
-  document.getElementById('link4').innerHTML=snap3;
+myFirebaseRef.child("fourth").on("value", function(snapshot) {
+
+  document.getElementById('link4').innerHTML=snapshot.val();
 });
 
 
@@ -66,28 +66,24 @@ myFirebaseRef.child("interaction").on("value", function(snapshot) {
  
 <section id="right">
    <h2> Latest News</h2>
-   <section><h4>Sears Holdings India to open second technology center in Bengaluru</h4>
-    <div id="link1">
-   <a href="#">Read More</a></div>
-   </section>
+   <section>
+       <div id="link1" class="trunc"></div>
+   </section> <a href="second.html">Read More</a>
  
-	<section><h4>Executive Visits: Dennis Moore, President of Member Technology</h4>
-   <div id="link2">
-    <a href="#">Read More</a></div>
-   </section>
+	<section>
+   <div id="link2" class="trunc"></div>    
+   </section><a href="third.html">Read More</a>
  
- <section><h4>Sears India MD Alok Kumar enlightens industry leaders on Talent Vision 2025</h4>
-   <div id="link3">
-   <a href="#">Read More</a></div>
-   </section>
+   <section>
+   <div id="link3" class="trunc"></div>
+   </section><a href="fourth.html">Read More</a>
    
-   <section><h4>Industry Interaction: In Conversation with Michael Dell, Chairman and CEO, Dell Inc</h4>
-   <div id="link4">
-   <a href="#">Read More</a></div>
-   </section>
+   <section>
+   <div id="link4" class="trunc"></div>
+   </section> <a href="fifth.html">Read More</a>
  
  
- </section>
+</section>
 
 
 <footer>
