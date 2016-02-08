@@ -1,0 +1,169 @@
+*{box-sizing:border-box;}
+
+
+/* Apply font to body */
+body {
+font-family: 'Open Sans', sans-serif;
+
+}
+
+header {
+text-align:center;
+background-color:#3A539B;
+color:white;
+padding:0px;
+}
+
+section {
+background-color:#EEEEEE;
+text-align:justify;
+padding-top:5px;
+border-radius:5px;
+}
+#demo , #demo1 { color:red;font-size:1.2em;}
+
+.trunc {
+white-space: nowrap;
+overflow: hidden;
+text-overflow: ellipsis;
+}
+
+#i1 ,#i2 {height:105;
+width:100;}
+
+#left {
+width:41%;
+padding:3px;
+max-width:41%;
+float:left;
+margin:10px;
+border:1px solid blue;
+}
+#left p{padding-top:15px;}
+
+#right {
+padding-right:5px;
+width:56%;
+max-width:56%;
+border:1px solid blue;
+float:left;
+margin:8px;
+}
+
+.news{
+width:700px;
+padding-left:10px;
+padding-bottom:10px;
+padding-top:10px;
+margin-top:5px;
+}
+
+
+section#common {
+padding:5px;
+margin:7px;
+border:1px solid blue;
+}
+
+#i1 ,#i2 {
+display: block;
+ margin-left: auto;
+margin-right: auto 
+}
+
+footer {
+clear:both;
+}
+
+h2 {padding-left:10px;color:#663399}
+
+h4 {text-align:center;color:#9A12B3;}
+
+h3 {color:#446CB3;}
+
+#left_footer {
+width:41%;
+max-width:41%;
+padding:3px;
+margin:8px;
+float:left;
+border:1px solid blue;
+}
+
+h3 {
+text-align:center;
+}
+p {padding:5px;}
+
+#right_footer {
+width:56%;
+max-width:56%;
+float:left;
+margin:8px;
+border:1px solid blue;
+padding-bottom:25px;
+padding-right:6px;
+}
+
+
+
+#f1{
+padding-left:40px;
+width:40em;	
+}
+
+button {
+padding-left:20px;
+padding-right:20px;
+position:relative;
+
+}
+
+a {
+text-decoration:none;
+}
+p.address{
+padding-left:30px;
+
+}
+i#mail{color:red;}
+
+
+@media screen and (max-width:767px)
+{
+	header{margin:auto;}
+	#left, #right{width:98%;max-width:98%;float:left;height:auto;margin:auto;margin-bottom:10px;}
+   
+	#left_footer, #right_footer{width:98%;max-width:98%;float:left;height:auto;margin:auto;margin-bottom:10px;}
+   
+   #right_footer{padding-right:3px;}
+   .news{width:auto;padding-top:29px;padding-bottom:28px;}
+	
+	
+ input,textarea{ padding:0px;max-width: 200px;min-width:150px;width:80%;margin:auto}
+ p#email{max-width: 200px;min-width:180px;width:100%;font-size:1em;}
+   
+}
+
+@media screen and (min-width:760px) and (max-width:1360px)
+{
+#left{float:left;width:47.5%;max-width:48%;margin:7px;min-height:400px;height:800px;}
+
+#i1,#i2{min-height:110px;max-height:500px;margin-top:10px;}
+
+#left p{padding-top:15px;}
+
+#right{width:48.4%;max-width:48%;min-height:400px;height:800px;}
+
+
+
+ .news{min-width:30px;max-width:500px;width:90%;padding-left:10px;padding-top:30px;padding-bottom:20px;}
+ 
+#left_footer{float:left;width:47%;max-width:48%;margin:6px;margin:7px;height:400px;}
+
+#right_footer{width:48%;max-width:48%;margin:7px;height:400px;}
+
+input,textarea{padding:0px;min-width:150px;max-width:250px;width:100%;}
+
+
+}
